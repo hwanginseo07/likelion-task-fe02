@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="todo.js" defer></script>
+    <script src="index.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="welcomeh2"></h2>
+    <input class="inputcontent" type="text" placeholder="내용을 입력하세요"/>
+    <button class="btn">+</button>
+    <div class="todolist"></div>
+
+    <script>
+        const users = localStorage.getItem('user');
+        const welcomeh2 = document.getElementById('welcomeh2');
+
+        welcomeh2.textContent = `${users}님 환영합니다`;
+        
+    </script>
+</body>
+</html>
